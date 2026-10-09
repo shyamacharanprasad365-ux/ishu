@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Ishu 💗</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:22px;background:linear-gradient(135deg,#fff0f4,#f0eaff 58%,#fff8e9);font-family:Arial,sans-serif;color:#514253;overflow:hidden}
+.card{width:min(620px,100%);background:#ffffffdf;border:1px solid #fff;border-radius:28px;padding:clamp(25px,6vw,44px);text-align:center;box-shadow:0 18px 65px #6f47631b;position:relative}
+.heart{font-size:42px;animation:beat 1.5s infinite;display:inline-block}h1{font-size:clamp(31px,7vw,46px);color:#a34e7d;margin:13px 0 8px;font-family:Georgia,serif}
+.sub{color:#a16a89;letter-spacing:2px;text-transform:uppercase;font-size:11px;font-weight:bold}
+p{font-size:16px;line-height:1.95;margin:15px 0;color:#5e5261}.note{background:#fff5f8;border-radius:20px;padding:20px;margin:22px 0;border:1px solid #f8e4ed}
+button{border:0;background:#a95883;color:white;border-radius:30px;padding:14px 23px;font-size:15px;font-weight:bold;cursor:pointer;box-shadow:0 8px 20px #a958832c}
+#extra{display:none;margin-top:20px;color:#985078;font-weight:bold;line-height:1.9}.sign{font-family:Georgia,serif;color:#a34e7d;font-size:19px;margin-top:20px}.tiny{font-size:12px;color:#a091a2;margin-top:25px}
+.float{position:fixed;bottom:-35px;font-size:21px;opacity:.55;animation:rise 10s linear infinite;pointer-events:none}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+</style></head>
+<body>
+<div class="card">
+<div class="heart">💌</div>
+<div class="sub">A little note from my heart</div>
+<h1>For you, Ishu 💗</h1>
+<p>Ishu, shayad main tumhari care aur support ko utni achhi tarah samajh hi nahi paaya, jitna mujhe samajhna chahiye tha.</p>
+<div class="note">
+<p>Tumne mushkil waqt mein mera saath diya, mujhe himmat di aur baar-baar support kiya. Kabhi-kabhi insaan apne paas maujood achhe insaan ki value der se samajhta hai — aur shayad main bhi wahi karta raha.</p>
+<p><strong>I’m sorry</strong> agar kabhi tumhe aisa laga ki main tumhari efforts nahi samajhta. Tumhara saath mere liye bahut मायने rakhta hai, aur main dil se tumhara shukriya ada karta hoon. ❤️</p>
+</div>
+<p>Main yeh nahi chahta ki sirf words se sab keh doon; main chahta hoon ki aage se apne actions se bhi tumhe dikha sakoon ki tumhari care aur dosti mere liye kitni important hai.</p>
+<button onclick="document.getElementById('extra').style.display='block'">Ek last baat, Ishu… 💕</button>
+<div id="extra">Thank you, Ishu — mere saath khade rehne ke liye, mujhe samajhne ki koshish karne ke liye, aur itna supportive hone ke liye. Please hamesha apna khayal rakhna. You deserve the same care you give to others. 🫶</div>
+<div class="sign">Dil se, thank you. 🌷</div>
+<div class="tiny">Made especially for Ishu ✨</div>
+</div>
+<script>
+const a=['💗','✨','🌸','💕','🫶'];for(let i=0;i<14;i++){let e=document.createElement('div');e.className='float';e.textContent=a[i%a.length];e.style.left=(Math.random()*100)+'%';e.style.animationDelay=(Math.random()*8)+'s';e.style.animationDuration=(7+Math.random()*7)+'s';document.body.appendChild(e);}
+</script></body></html>
